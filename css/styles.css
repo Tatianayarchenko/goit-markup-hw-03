@@ -73,6 +73,7 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border: 1px solid #ececec;
 }
 
 .header-list {
@@ -237,6 +238,12 @@ body {
 .about-list {
   display: flex;
 }
+.about-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .about-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -259,8 +266,8 @@ body {
 }
 .team-list {
   display: flex;
-  /* width: 270px; */
 }
+
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -272,6 +279,9 @@ body {
 }
 .team-foto {
   margin-bottom: 30px;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .team-title {
@@ -351,8 +361,25 @@ body {
 }
 
 /* -----------------PORTFOLIO FILTR BUTTONS----------------- */
+.filtr-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filtr-item {
+  margin-right: 8px;
+}
+.filtr-item:last-child {
+  margin-right: 0;
+}
+
+.projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .filtr-btn {
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -361,6 +388,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-button-color);
   cursor: pointer;
+  border: none;
+  /* border-radius: 4px; */
 }
 
 .filtr-btn:hover,
@@ -370,6 +399,29 @@ body {
 }
 
 /* ---------------PORTFOLIO PROJECTS----------------- */
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.projects-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+}
+
+.progect-border {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.projects-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .projects-link:hover,
 .projects-link:focus {
