@@ -13,6 +13,7 @@
   --logo-footer-color: #ffffff;
   --hero-background-color: #2f303a;
   --foter-background-color: #2f303a;
+  --team-background-color: #f5f4fa;
 }
 
 p,
@@ -144,6 +145,8 @@ body {
   background-color: var(--hero-background-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -187,8 +190,8 @@ body {
 /* -------------------Особенности (peculiarities)------------------- */
 
 .peculiarities-container {
-  width: 1170px;
-  margin: 94px auto;
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 
 .peculiarities-list {
@@ -218,17 +221,34 @@ body {
 }
 
 /* -------------------ABOUT------------------- */
+.about-container {
+  margin-bottom: 94px;
+}
+
 .about-title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--main-title-color);
+  margin-bottom: 50px;
+}
+.about-list {
+  display: flex;
+}
+.about-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* -------------------TEAM------------------- */
+.team-container {
+  background-color: var(--team-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  width: 1600px;
+  margin: 0 auto;
+}
 
 .team-main-title {
   font-weight: 700;
@@ -237,6 +257,22 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-item-box {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-foto {
+  margin-bottom: 30px;
 }
 
 .team-title {
@@ -246,6 +282,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
+  margin-bottom: 10px;
 }
 
 .team-text {
@@ -253,11 +290,18 @@ body {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 
 /* -------------------FOOTER------------------- */
-.footer {
-  background-color: var(--first-text-color);
+.footer-container {
+  background-color: var(--foter-background-color);
+  width: 1600px;
+  margin: 0 auto;
+}
+.footer-content {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -267,6 +311,8 @@ body {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  display: block;
+  margin-bottom: 30px;
 }
 .footer-logo-part {
   color: var(--logo-footer-color);
@@ -279,6 +325,8 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
+  display: block;
+  margin-bottom: 9px;
 }
 
 .footer-contact {
@@ -286,6 +334,10 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-text-color);
+  display: block;
+}
+.footer-contact:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-logo-part:hover,
