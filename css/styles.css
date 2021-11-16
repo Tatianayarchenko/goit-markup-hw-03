@@ -63,6 +63,11 @@ body {
   margin: -1px;
 }
 
+/* .section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+} */
+
 /* -----------------HEADER--------------------- */
 
 .header {
@@ -132,9 +137,6 @@ body {
 .header-contact:last-child {
   margin-right: 0;
 }
-/* .header-contact:not(:last-child) {
-  margin-right: 50px;
-} */
 
 .header-contact:hover,
 .header-contact:active {
@@ -145,8 +147,6 @@ body {
   background-color: var(--hero-background-color);
   padding-top: 200px;
   padding-bottom: 200px;
-  width: 1600px;
-  margin: 0 auto;
 }
 
 .hero-title {
@@ -190,8 +190,8 @@ body {
 /* -------------------Особенности (peculiarities)------------------- */
 
 .peculiarities-container {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .peculiarities-list {
@@ -221,8 +221,9 @@ body {
 }
 
 /* -------------------ABOUT------------------- */
+
 .about-container {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .about-title {
@@ -246,8 +247,6 @@ body {
   background-color: var(--team-background-color);
   padding-top: 94px;
   padding-bottom: 94px;
-  width: 1600px;
-  margin: 0 auto;
 }
 
 .team-main-title {
@@ -296,8 +295,6 @@ body {
 /* -------------------FOOTER------------------- */
 .footer-container {
   background-color: var(--foter-background-color);
-  width: 1600px;
-  margin: 0 auto;
 }
 .footer-content {
   padding-top: 60px;
